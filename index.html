@@ -53,30 +53,79 @@
 		<div class="container">
 
 			<div class="featurette">
-				<h2 class="featurette-heading">First featurette headling.</h2>
 				<p class="lead">
-					Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+					Type in anything in the source text area...
+				</p>
+				<p class="lead">
+					...and get the parsed result in real time
+				</p>
+				<p>
+					(you can also choose the parsing option from the column in the middle)
 				</p>
 			</div>
 
 			<div class="span5 well">
 
 				<h2>Source</h2>
-				<p>
-					Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-				</p>
+				<textarea id="source" type="text" onKeyPress="transform()" onKeyUp="transform()"></textarea>																
+				
+
+
 			</div>
 			<div class="span1 well">
-				<i class="icon-resize-horizontal"></i>
+
+				<ul class="nav nav-pills nav-stacked" onclick="identifyOutputType()">
+					<li class="active" >
+						<a class="btn-mini" href="#" id="1" >Default</a>
+					</li>
+					<li>
+						<a class="btn-mini" href="#" id="2">ASCII</a>
+					</li>
+					<li>
+						<a class="btn-mini" href="#" id="3">Reverse</a>
+					</li>
+					<li>
+						<a class="btn-mini" href="#" id="4">Morse</a>
+					</li>
+					<li>
+						<a class="btn-mini" href="#" id="5">Binary</a>
+					</li>
+					<li>
+						<a class="btn-mini" href="#" id="6">Hex10</a>
+					</li>
+					<li>
+						<a class="btn-mini" href="#" id="7">BASE64</a>
+					</li>
+					<li>
+						<a class="btn-mini" href="#" id="8">ROT13</a>
+					</li>
+				</ul>
+
+				<i class="icon-resize-horizontal"></i></br>
+				
+				<ul class="nav nav-pills nav-stacked" onclick="identifyOutputType()">
+					<li class="divider"></li>
+					<li>
+						<a class="btn-mini" href="#" id="9">to Python</a>
+					</li>
+				</ul>
+				
 			</div>
 			<div class="span5 well">
 
 				<h2>Result</h2>
+				<textarea id="result"></textarea>
+								
 
-				<p>
-					Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-				</p>
+
 			</div>
 
+			<!-- jQuery -->
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+			<!-- twitter bootstrap -->
+			<script src="js/bootstrap-dropdown.js"></script>
+			<script src="js/bootstrap-tab.js"></script>
+			<!-- includes on keypress function -->
+			<script src="js/script.js"></script>
 	</body>
 </html>
