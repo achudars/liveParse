@@ -295,7 +295,9 @@ function toPython(s) {
 
 	// REFERENCE: http://docs.python.org/2/reference/grammar.html
 	// REFERENCE: http://docs.python.org/release/2.5.2/ref/grammar.txt
-	// REFERENCE http://zaach.github.com/jison/demos/calc/
+	// REFERENCE: http://zaach.github.com/jison/demos/calc/
+	
+	// REFRENCE: http://blog.oleganza.com/post/106246432/recursive-descent-parser-in-javascript
 
 	var parsed = "";
 	if (arrayOfWords.length > 1) {
