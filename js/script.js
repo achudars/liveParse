@@ -292,7 +292,9 @@ function toPython(s) {
 	var arrayOfWords = s.split(" ");
 
 	//----- Step 2. Process syntax
-
+	
+	// START WITH THIS: http://journal.stuffwithstuff.com/2011/03/19/pratt-parsers-expression-parsing-made-easy/
+	
 	// REFERENCE: http://docs.python.org/2/reference/grammar.html
 	// REFERENCE: http://docs.python.org/release/2.5.2/ref/grammar.txt
 	// REFERENCE: http://zaach.github.com/jison/demos/calc/
